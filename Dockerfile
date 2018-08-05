@@ -2,7 +2,7 @@
 # Import Python runtime and set up working directory
 FROM python:2.7-slim
 WORKDIR /app
-ADD . /app
+COPY . /app
 
 # Install any necessary dependencies
 RUN pip install -r requirements.txt
